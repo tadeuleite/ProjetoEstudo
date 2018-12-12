@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+
+<html lang="pt-br">
     <head>
-        <title>TODO supply a title</title>
+        <title>Menu da Loja</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            h1{
+                font-family: Arial;
+                font-size: 30pt;
+            }
+        </style>
+
     </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+    <body>       
+
+        <form method="post" id="mlogin" />
+        <!-- action="botapravalidar com db" 
+        -->
+        <fieldset><legend><b>Bem-vindo a área de login</b></legend>
+            <p><label for="lblLogin"> <b> Login: </b></label> <input type="text" name="loginUsuario" id="lblLogin" size="13" maxlength="15" placeholder="<Digite seu login>"/></p>
+            <p><label for="lblSenha"> <b> Senha: </b></label> <input type="password" name="senhaUsuario" id="lblSenha" size="13" maxlength="15" placeholder="<Digite sua senha>"/></p>
+        </fieldset>
+        <p><button> <a href="_principal/menu-principal.html"> Logar </a> </button>
+            <br/>
+        </form>
+</body>
 </html>
