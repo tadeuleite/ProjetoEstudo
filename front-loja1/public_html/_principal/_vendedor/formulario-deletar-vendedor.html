@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Deletar Vendedor</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div>
+            <fieldset>
+                <legend><b>Deletar vendedor</b></legend>
+                <br/>             
+                <p>
+                    <label for="lblCpf"> <b> Cpf do vendedor: </b></label>
+                    <input 
+                        type="text" 
+                        name="cpfVendedor" 
+                        id="lblCpf" 
+                        size="27" 
+                        maxlength="11" 
+                        placeholder="<Digite apenas os números do cpf>"/>
+                </p>
+                ou
+                <p>
+                    <label for="lblNome"> <b> Nome do vendedor: </b></label>
+                    <input 
+                        type="text"
+                        name="nomeVendedor" 
+                        id="lblNome"
+                        size="50"
+                        maxlength="50"
+                        placeholder="<Digite um nome do vendedor aqui>"/>
+                </p>
+                <!-- ao clicar em enviar, tem que ir pro db e confirmar os dados do cliente e confirmar-->
+                <a href="">Enviar dados</a>
+                <br/>
+            </fieldset>
+        </div>
+        <a href="../menu-principal.html">Voltar ao menu principal</a>
     </body>
 </html>
