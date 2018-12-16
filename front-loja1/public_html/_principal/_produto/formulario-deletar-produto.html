@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Deletar Produtos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            p.negrito {font-weight:bold;}
+            legend.negrito{font-weight: bold};
+        </style>
     </head>
+
     <body>
-        <div>TODO write content</div>
+        <div>
+            <fieldset>
+                <legend class="negrito">Deletar produtos</legend>
+                <pre>
+                </pre>       
+                <p class="negrito">
+                    <label for="lblCodigo"> Código do produto: </label> 
+                    <input 
+                        type="text" 
+                        name="codigoProduto"
+                        id="lblCodigo"
+                        size="30"
+                        maxlength="30"
+                        placeholder="<Digite apenas os números do Código>"/>
+                </p>
+                ou
+                <p class="negrito">
+                    <label for="lblNome"> Nome do produto: </label> 
+                    <input 
+                        type="text"
+                        name="nomeProduto"
+                        id="lblNome"
+                        size="50" 
+                        maxlength="50" 
+                        placeholder="<Digite o nome do produto aqui>"/>
+                </p>
+
+                <!-- ao clicar em enviar, tem que ir pro db e confirmar os dados do produto e confirmar-->
+                <button
+                    onclick="location.href = '#'"
+                    type="button">Enviar dados
+                </button>
+            </fieldset>
+            <button
+                onclick="location.href = '../menu-principal.html'"
+                type="button">Voltar ao menu principal
+            </button>
+        </div>
     </body>
 </html>

@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+ 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Menu Produto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               
+        <style type="text/css">
+            p.negrito {font-weight:bold;}
+            legend.negrito{font-weight: bold};
+        </style>
     </head>
+    
     <body>
-        <div>TODO write content</div>
+         <div>                        
+            <form method="get" id="mproduto">
+
+                <fieldset>
+                    <legend class="negrito">Bem-vindo ao menu de produto</legend>
+
+                    <h1>
+                        Selecione uma das opções abaixo:
+                    </h1>               
+                    <p>
+                        <button
+                            onclick="location.href = 'formulario-consultar-produto.html'"
+                            type="button"> Clique aqui para <strong>consultar</strong> um produto
+                        </button>
+                    </p>
+                    <p> 
+                        <button
+                            onclick="location.href = 'formulario-inserir-produto.html'"
+                            type="button"> Clique aqui para <strong>inserir</strong> um produto
+                        </button> 
+                    </p>
+                    <p> 
+                        <button
+                            onclick="location.href = 'formulario-deletar-produto.html'"
+                            type="button"> Clique aqui para <strong> deletar </strong> um produto
+                        </button> 
+                    </p>
+                    <p> 
+                        <button
+                            onclick="location.href = 'formulario-alterar-produto.html'"
+                            type="button"> Clique aqui para <strong> alterar </strong> um produto
+                        </button>
+                    </p>      
+                </fieldset>
+                <button
+                    onclick="location.href = '../menu-principal.html'"
+                    type="button"> Voltar ao menu principal
+                </button>
+            </form>
+        </div>
     </body>
 </html>
