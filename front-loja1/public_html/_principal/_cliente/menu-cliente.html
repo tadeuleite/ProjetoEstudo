@@ -5,31 +5,51 @@
         <title>Menu Cliente</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            p.negrito {font-weight:bold;}
+            legend.negrito{font-weight: bold};
+        </style>
     </head>
     <body>
         <div>                        
             <form method="get" id="mcliente">
 
                 <fieldset>
-                    <legend>Bem-vindo ao menu de cliente</legend>
-                    <br/>
+                    <legend class="negrito">Bem-vindo ao menu de cliente</legend>
+
                     <h1>
                         Selecione uma das opções abaixo:
                     </h1>               
                     <p>
-                        <a href="formulario-consultar-cliente.html"> Clique aqui para <b> consultar </b> um cliente </a>
+                        <button
+                            onclick="location.href = 'formulario-consultar-cliente.html'"
+                            type="button"> Clique aqui para <strong>consultar</strong> um cliente
+                        </button>
                     </p>
                     <p> 
-                        <a href="formulario-inserir-cliente.html"> Clique aqui para <b> inserir </b> um cliente </a> 
+                        <button
+                            onclick="location.href = 'formulario-inserir-cliente.html'"
+                            type="button"> Clique aqui para <strong>inserir</strong> um cliente
+                        </button> 
                     </p>
                     <p> 
-                        <a href="formulario-deletar-cliente.html"> Clique aqui para <b> deletar </b> um cliente </a> 
+                        <button
+                            onclick="location.href = 'formulario-deletar-cliente.html'"
+                            type="button"> Clique aqui para <strong> deletar </strong> um cliente
+                        </button> 
                     </p>
                     <p> 
-                        <a href="formulario-alterar-cliente.html"> Clique aqui para <b> alterar </b> um cliente </a>
+                        <button
+                            onclick="location.href = 'formulario-alterar-cliente.html'"
+                            type="button"> Clique aqui para <strong> alterar </strong> um cliente
+                        </button>
                     </p>      
                 </fieldset>
-                <a href="../menu-principal.html"> Voltar ao menu principal </a>
+                <button
+                    onclick="location.href = '../menu-principal.html'"
+                    type="button"> Voltar ao menu principal
+                </button>
             </form>
         </div>
     </body>

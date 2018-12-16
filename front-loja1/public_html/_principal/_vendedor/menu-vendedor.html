@@ -5,35 +5,52 @@
         <title>Menu de Vendedores</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            p.negrito {font-weight:bold;}
+            legend.negrito{font-weight: bold};
+        </style>
     </head>
     <body>
         <div>
             <form method="get" id="mvendedor">
 
                 <fieldset>
-                    <legend><b>Bem-vindo ao menu de vendedor</b></legend>
-                    <br/>
+                    <legend class="negrito">Bem-vindo ao menu de vendedor</legend>
+                    <pre></pre>
                     <h1>
                         Selecione uma das opções abaixo:
-                    </h1>               
+                    </h1>
                     <p>
-                        <a href="formulario-consultar-vendedor.html"> Clique aqui para <b> consultar </b> um vendedor </a>
+                        <button
+                            onclick="location.href = 'formulario-consultar-vendedor.html'"
+                            type='button'> Clique aqui para <strong> consultar </strong> um vendedor
+                        </button>
                     </p>
 
                     <p>
-                        <a href="formulario-inserir-vendedor.html"> Clique aqui para <b> inserir </b> um vendedor </a> 
+                        <button onclick="location.href = 'formulario-inserir-vendedor.html'"
+                                type='button'> Clique aqui para <strong> inserir </strong> um vendedor
+                        </button> 
                     </p>
 
                     <p>
-                        <a href="formulario-deletar-vendedor.html"> Clique aqui para <b> deletar </b> um vendedor </a> 
+                        <button onclick="location.href = 'formulario-deletar-vendedor.html'"
+                                type='button'> Clique aqui para <strong> deletar </strong> um vendedor
+                        </button> 
                     </p>
 
                     <p>
-                        <a href="formulario-alterar-vendedor.html"> Clique aqui para <b> alterar </b> um vendedor </a> 
+                        <button onclick="location.href = 'formulario-alterar-vendedor.html'"
+                                type='button'> Clique aqui para <strong> alterar </strong> um vendedor
+                        </button> 
                     </p>                     
                 </fieldset>
 
-                <a href="../menu-principal.html"> Voltar ao menu principal </a>
+                <button
+                    onclick="location.href = '../menu-principal.html'"
+                    type="button"> Voltar ao menu principal
+                </button>
             </form>
         </div>
     </body>

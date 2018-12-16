@@ -5,14 +5,21 @@
         <title>Consultar Vendedor</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            p.negrito {font-weight:bold;}
+            legend.negrito{font-weight: bold};
+        </style>
     </head>
+    
     <body>
         <div>
             <fieldset>
-                <legend><b>Consultar vendedor</b></legend>
-                <br/>             
-                <p>
-                    <label for="lblCpf"> <b> Cpf do vendedor: </b></label> 
+                <legend class='negrito'>Consultar vendedor</legend>
+                <pre>
+                </pre>             
+                <p class='negrito'>
+                    <label for="lblCpf">  Cpf do vendedor: </label> 
                     <input
                         type="text"
                         name="cpfVendedor"
@@ -22,8 +29,8 @@
                         placeholder="<Digite apenas os números do cpf>"/>
                 </p>
                 ou
-                <p>
-                    <label for="lblNome"> <b> Nome do vendedor: </b></label>
+                <p class='negrito'>
+                    <label for="lblNome">  Nome do vendedor: </label>
                     <input
                         type="text"
                         name="nomeVendedor"
@@ -32,11 +39,16 @@
                         maxlength="50"
                         placeholder="<Digite um nome do vendedor aqui>"/>
                 </p>
-                <!-- ao clicar em enviar, tem que ir pro db e retornar os itens comprados-->
-                <a href="" target="_blank">Enviar dados</a> 
-                <br/>
+                <!-- ao clicar em enviar, tem que ir pro db e retornar os dados-->
+                <button
+                    onclick="location.href = '#'"
+                    type="button">Enviar dados
+                </button> 
             </fieldset>
-            <a href="../menu-principal.html">Voltar ao menu principal</a>
+            <button
+                onclick="location.href = '../menu-principal.html'"
+                type="button">Voltar ao menu principal
+            </button>
         </div>
     </body>
 </html>
