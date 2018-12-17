@@ -8,48 +8,59 @@
 
         <style type="text/css">
             p.negrito {font-weight:bold;}
-            legend.negrito{font-weight: bold};
+            legend.negrito{font-weight: bold;}
+            a.botao{
+                background-color: #e7e7e7;
+                border: 2px solid #555555;
+                border-radius: 6px;
+                color: black;
+                padding: 12px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+            }
         </style>
     </head>
+
     <body>
         <div>
             <fieldset>
-                <legend class='negrito'>Bem-vindo ao menu principal</legend>
+                <legend class="negrito">Bem-vindo ao menu principal</legend>
 
                 <h1>
                     Selecione uma das opções abaixo:
                 </h1>               
                 <p>
-                    <button
-                        onclick="location.href = '_cliente/menu-cliente.html'"
-                        type="button"> Clique aqui para ir ao menu de <strong>clientes</strong>
-                    </button> 
+                    <a class="botao" href="_cliente/menu-cliente.html">
+                        Clique aqui para ir ao menu de <strong>clientes</strong>
+                    </a> 
                 </p>
                 <p>
-                    <button 
-                        onclick="location.href = '_vendedor/menu-vendedor.html'"
-                        type="button"> Clique aqui para ir ao menu de <strong>vendedores</strong>
-                    </button> 
+                    <a class="botao" href = "_vendedor/menu-vendedor.html">
+                        Clique aqui para ir ao menu de <strong>vendedores</strong>
+                    </a> 
                 </p>
                 <p> 
-                    <button 
-                        onclick="location.href = '_produto/menu-produto.html'"
-                        type="button"> Clique aqui para ir ao menu de <strong>produtos</strong>
-                    </button> 
+                    <a class="botao" href = "_produto/menu-produto.html">
+                        Clique aqui para ir ao menu de <strong>produtos</strong>
+                    </a> 
                 </p>
                 <p> 
-                    <button 
-                        onclick="location.href = '_entrega/menu-entrega.html'"
-                        type="button"> Clique aqui para calcular o <strong>preço do frete</strong>
-                    </button> 
+                    <a class="botao" href = "_entrega/menu-entrega.html">
+                        Clique aqui para calcular o <strong>preço do frete</strong>
+                    </a> 
                 </p>                
             </fieldset>
 
-            <button onclick="location.href = '../index.html'" type="button">Trocar usuário ou deslogar</button>
+            <a class="botao" href = "../index.html">
+                Trocar usuário ou deslogar
+            </a>
             <pre>
                 
             </pre>
-            <p class='negrito'>
+            <p class="negrito">
                 *Os menus são baseados em CIDA (Consultar, Inserir, Deletar e Alterar)
             </p>
         </div>
