@@ -1,19 +1,31 @@
 <!DOCTYPE html>
- 
+
 <html>
     <head>
         <title>Menu Produto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               
+
         <style type="text/css">
             p.negrito {font-weight:bold;}
-            legend.negrito{font-weight: bold};
+            legend.negrito{font-weight: bold;} 
+            a.botao{
+                background-color: #e7e7e7;
+                border: 2px solid #555555;
+                border-radius: 6px;
+                color: black;
+                padding: 12px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+            }
         </style>
     </head>
-    
+
     <body>
-         <div>                        
+        <div>                        
             <form method="get" id="mproduto">
 
                 <fieldset>
@@ -23,34 +35,29 @@
                         Selecione uma das opções abaixo:
                     </h1>               
                     <p>
-                        <button
-                            onclick="location.href = 'formulario-consultar-produto.html'"
-                            type="button"> Clique aqui para <strong>consultar</strong> um produto
-                        </button>
+                        <a class="botao" href = "formulario-consultar-produto.html">
+                            Clique aqui para <strong>consultar</strong> um produto
+                        </a>
                     </p>
                     <p> 
-                        <button
-                            onclick="location.href = 'formulario-inserir-produto.html'"
-                            type="button"> Clique aqui para <strong>inserir</strong> um produto
-                        </button> 
+                        <a class="botao" href = "formulario-inserir-produto.html">
+                            Clique aqui para <strong>inserir</strong> um produto
+                        </a> 
                     </p>
                     <p> 
-                        <button
-                            onclick="location.href = 'formulario-deletar-produto.html'"
-                            type="button"> Clique aqui para <strong> deletar </strong> um produto
-                        </button> 
+                        <a class="botao" href = "formulario-deletar-produto.html">
+                            Clique aqui para <strong> deletar </strong> um produto
+                        </a> 
                     </p>
                     <p> 
-                        <button
-                            onclick="location.href = 'formulario-alterar-produto.html'"
-                            type="button"> Clique aqui para <strong> alterar </strong> um produto
-                        </button>
+                        <a class="botao" href = "formulario-alterar-produto.html">
+                            Clique aqui para <strong> alterar </strong> um produto
+                        </a>
                     </p>      
                 </fieldset>
-                <button
-                    onclick="location.href = '../menu-principal.html'"
-                    type="button"> Voltar ao menu principal
-                </button>
+                <a class="botao" href = "../menu-principal.html">
+                    Voltar ao menu principal
+                </a>
             </form>
         </div>
     </body>

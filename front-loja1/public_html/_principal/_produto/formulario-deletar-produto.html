@@ -8,7 +8,19 @@
 
         <style type="text/css">
             p.negrito {font-weight:bold;}
-            legend.negrito{font-weight: bold};
+            legend.negrito{font-weight: bold;} 
+            a.botao{
+                background-color: #e7e7e7;
+                border: 2px solid #555555;
+                border-radius: 6px;
+                color: black;
+                padding: 12px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+            }
         </style>
     </head>
 
@@ -41,15 +53,13 @@
                 </p>
 
                 <!-- ao clicar em enviar, tem que ir pro db e confirmar os dados do produto e confirmar-->
-                <button
-                    onclick="location.href = '#'"
-                    type="button">Enviar dados
-                </button>
+                <a class="botao" href = "#">
+                    Enviar dados
+                </a>
             </fieldset>
-            <button
-                onclick="location.href = '../menu-principal.html'"
-                type="button">Voltar ao menu principal
-            </button>
+            <a class="botao" href = "../menu-principal.html">
+                Voltar ao menu principal
+            </a>
         </div>
     </body>
 </html>
