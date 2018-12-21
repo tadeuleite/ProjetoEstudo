@@ -5,53 +5,36 @@
         <title>Menu principal</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style type="text/css">
-            p.negrito {font-weight:bold;}
-            legend.negrito{font-weight: bold};
+        <style>
+            h1{                
+                font-size: 12;
+            }
         </style>
     </head>
     <body>
         <div>
             <fieldset>
-                <legend class='negrito'>Bem-vindo ao menu principal</legend>
-
+                <legend><b>Bem-vindo ao menu principal</b></legend>
+                <br/>
                 <h1>
-                    Selecione uma das opções abaixo:
+                    <b> Selecione uma das opções abaixo: </b>
                 </h1>               
                 <p>
-                    <button
-                        onclick="location.href = '_cliente/menu-cliente.html'"
-                        type="button"> Clique aqui para ir ao menu de <strong>clientes</strong>
-                    </button> 
+                    <a href="_cliente/menu-cliente.html"> Clique aqui para ir ao menu de <b> clientes </b> </a> 
                 </p>
                 <p>
-                    <button 
-                        onclick="location.href = '_vendedor/menu-vendedor.html'"
-                        type="button"> Clique aqui para ir ao menu de <strong>vendedores</strong>
-                    </button> 
+                    <a href="_vendedor/menu-vendedor.html"> Clique aqui para ir ao menu de <b> vendedores </b> </a> 
                 </p>
                 <p> 
-                    <button 
-                        onclick="location.href = '_produto/menu-produto.html'"
-                        type="button"> Clique aqui para ir ao menu de <strong>produtos</strong>
-                    </button> 
+                    <a href="_produto/menu-produto.html"> Clique aqui para ir ao menu de <b> produtos </b> </a> 
                 </p>
                 <p> 
-                    <button 
-                        onclick="location.href = '_entrega/menu-entrega.html'"
-                        type="button"> Clique aqui para calcular o <strong>preço do frete</strong>
-                    </button> 
+                    <a href="_entrega/menu-entrega.html"> Clique aqui para calcular o preço do <b> frete </b> </a> 
                 </p>                
             </fieldset>
-
-            <button onclick="location.href = '../index.html'" type="button">Trocar usuário ou deslogar</button>
-            <pre>
-                
-            </pre>
-            <p class='negrito'>
-                *Os menus são baseados em CIDA (Consultar, Inserir, Deletar e Alterar)
-            </p>
+            <button> <a href="../index.html"> Trocar usuário ou deslogar </a> </button>
+                <br/>
+                <b> *Os menus são baseados em CIDA (Consultar, Inserir, Deletar e Alterar) </b>
         </div>
     </body>
 </html>

@@ -6,45 +6,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <style type='text/css'>
-            p.negrito {font-weight:bold;}
-            legend.negrito{font-weight: bold}; 
+        <style>
+            h1{
+                font-family: Arial;
+                font-size: 30pt;
+            }
         </style>
+
     </head>
-    
     <body>       
-        <div>
-            <form method="post" id="mlogin">
-                <!-- action="botapravalidar com db" 
-                -->
-                <fieldset>
-                    <legend class="negrito">Bem-vindo a área de login</legend>
-                    <p class='negrito'>
-                        <label for="lblLogin"> Login:</label>
-                        <input 
-                            type="text" 
-                            name="loginUsuario" 
-                            id="lblLogin" 
-                            size="13"
-                            maxlength="15"
-                            placeholder="<Digite seu login>"/>
-                    </p>
-                    <p class='negrito'>
-                        <label for="lblSenha"> Senha: </label> 
-                        <input 
-                            type="password" 
-                            name="senhaUsuario" 
-                            id="lblSenha" 
-                            size="13"
-                            maxlength="15" 
-                            placeholder="<Digite sua senha>"/>
-                    </p>
-                </fieldset>
-                <button
-                    onclick="location.href = '_principal/menu-principal.html'"
-                    type="button">Login
-                </button>
-            </form>
-        </div>
-    </body>
+
+        <form method="post" id="mlogin" />
+        <!-- action="botapravalidar com db" 
+        -->
+        <fieldset>
+            <legend><b>Bem-vindo a área de login</b></legend>
+            <p>
+                <label for="lblLogin"> <b> Login: </b></label>
+                <input 
+                    type="text" 
+                    name="loginUsuario" 
+                    id="lblLogin" 
+                    size="13"
+                    maxlength="15"
+                    placeholder="<Digite seu login>"/>
+            </p>
+            <p>
+                <label for="lblSenha"> <b> Senha: </b></label> 
+                <input 
+                    type="password" 
+                    name="senhaUsuario" 
+                    id="lblSenha" 
+                    size="13"
+                    maxlength="15" 
+                    placeholder="<Digite sua senha>"/>
+            </p>
+        </fieldset>
+       <a href="_principal/menu-principal.html"> Logar </a>
+            <br/>
+        </form>
+</body>
 </html>

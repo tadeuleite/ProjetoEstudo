@@ -5,21 +5,14 @@
         <title>Deletar Vendedor</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style type="text/css">
-            p.negrito {font-weight:bold;}
-            legend.negrito{font-weight: bold};
-        </style>
     </head>
-    
     <body>
         <div>
             <fieldset>
-                <legend class='negrito'>Deletar vendedor</legend>
-                <pre>
-                </pre>          
-                <p class='negrito'>
-                    <label for="lblCpf">  Cpf do vendedor: </label>
+                <legend><b>Deletar vendedor</b></legend>
+                <br/>             
+                <p>
+                    <label for="lblCpf"> <b> Cpf do vendedor: </b></label>
                     <input 
                         type="text" 
                         name="cpfVendedor" 
@@ -29,8 +22,8 @@
                         placeholder="<Digite apenas os números do cpf>"/>
                 </p>
                 ou
-                <p class='negrito'>
-                    <label for="lblNome">  Nome do vendedor: </label>
+                <p>
+                    <label for="lblNome"> <b> Nome do vendedor: </b></label>
                     <input 
                         type="text"
                         name="nomeVendedor" 
@@ -40,15 +33,10 @@
                         placeholder="<Digite um nome do vendedor aqui>"/>
                 </p>
                 <!-- ao clicar em enviar, tem que ir pro db e confirmar os dados do cliente e confirmar-->
-                <button
-                    onclick="location.href = '#'"
-                    type="button">Enviar dados
-                </button>
+                <a href="">Enviar dados</a>
+                <br/>
             </fieldset>
-            <button
-                onclick="location.href = '../menu-principal.html'"
-                type="button">Voltar ao menu principal
-            </button>
-        </div>    
+        </div>
+        <a href="../menu-principal.html">Voltar ao menu principal</a>
     </body>
 </html>
