@@ -5,21 +5,14 @@
         <title>Consultar Clientes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style type="text/css">
-            p.negrito {font-weight:bold;}
-            legend.negrito{font-weight: bold};
-        </style>
     </head>
-    
     <body>
         <div>
             <fieldset>
-                <legend class="negrito">Consultar clientes</legend>
-                <pre>
-                </pre>      
-                <p class="negrito">
-                    <label for="lblCpf"> Cpf do cliente: </label>
+                <legend><b>Consultar clientes</b></legend>
+                <br/>             
+                <p>
+                    <label for="lblCpf"> <b> Cpf do cliente: </b></label>
                     <input 
                         type="text"
                         name="cpfCliente"
@@ -29,8 +22,8 @@
                         placeholder="<Digite apenas os números do cpf>"/>
                 </p>
                 ou
-                <p class="negrito">
-                    <label for="lblNome"> Nome do cliente: </label>
+                <p>
+                    <label for="lblNome"> <b> Nome do cliente: </b></label>
                     <input
                         type="text" 
                         name="nomeCliente"
@@ -39,17 +32,12 @@
                         maxlength="50" 
                         placeholder="<Digite um nome do cliente aqui>"/>
                 </p>
-
+                
                 <!-- ao clicar em enviar, tem que ir pro db e retornar os itens comprados-->
-                <button
-                    onclick="location.href = '#'"
-                    type="button">Enviar dados
-                </button> 
-            </fieldset>           
-            <button
-                onclick="location.href = '../menu-principal.html'"
-                type="button">Voltar ao menu principal
-            </button>
+               <a href="" target="_blank">Enviar dados</a> 
+                <br/>
+            </fieldset>
+            <a href="../menu-principal.html">Voltar ao menu principal</a> 
         </div>
     </body>
 </html>
