@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title> Deletar Produtos </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            .negrito {font-weight:bold;} 
+            .botao{
+                background-color: #e7e7e7;
+                border: 2px solid #555555;
+                border-radius: 6px;
+                color: black;
+                padding: 12px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+            }
+            div {
+                border: 1px solid black;               
+                margin-bottom: 150px;
+                margin-right: 800px;
+            }
+        </style>
     </head>
+
     <body>
-        <div>TODO write content</div>
+        <div>
+            <fieldset>
+                <legend class="negrito"> Deletar produtos </legend>
+
+                <p class="negrito">
+                    <label for="lblCodigo"> Código do produto: </label> 
+                    <input 
+                        type="text" 
+                        name="codigoProduto"
+                        id="lblCodigo"
+                        size="30"
+                        maxlength="30"
+                        placeholder="<Digite apenas os números do Código>"/>
+                </p>
+                ou
+                <p class="negrito">
+                    <label for="lblNome"> Nome do produto: </label> 
+                    <input 
+                        type="text"
+                        name="nomeProduto"
+                        id="lblNome"
+                        size="50" 
+                        maxlength="50" 
+                        placeholder="<Digite o nome do produto aqui>"/>
+                </p>
+
+                <!-- ao clicar em enviar, tem que ir pro db e confirmar os dados do produto e confirmar-->
+                <a class="botao" href = "#">
+                    Enviar dados
+                </a>
+            </fieldset>
+            <a class="botao" href = "../menu-principal.html">
+                Voltar ao menu principal
+            </a>
+        </div>
     </body>
 </html>
