@@ -2,48 +2,64 @@
 
 <html lang="pt-br">
     <head>
-        <title>Menu da Loja</title>
+        <title> Menu da Loja </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <style>
-            h1{
-                font-family: Arial;
-                font-size: 30pt;
+        <style type='text/css'>
+            .negrito { font-weight:bold; } 
+            .botao{
+                background-color: #e7e7e7;
+                border: 2px solid #555555;
+                border-radius: 6px;
+                color: black;
+                padding: 12px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+            }
+            div {
+                border: 1px solid black;               
+                margin-bottom: 150px;
+                margin-right: 800px;
             }
         </style>
 
     </head>
-    <body>       
 
-        <form method="post" id="mlogin" />
-        <!-- action="botapravalidar com db" 
-        -->
-        <fieldset>
-            <legend><b>Bem-vindo a área de login</b></legend>
-            <p>
-                <label for="lblLogin"> <b> Login: </b></label>
-                <input 
-                    type="text" 
-                    name="loginUsuario" 
-                    id="lblLogin" 
-                    size="13"
-                    maxlength="15"
-                    placeholder="<Digite seu login>"/>
-            </p>
-            <p>
-                <label for="lblSenha"> <b> Senha: </b></label> 
-                <input 
-                    type="password" 
-                    name="senhaUsuario" 
-                    id="lblSenha" 
-                    size="13"
-                    maxlength="15" 
-                    placeholder="<Digite sua senha>"/>
-            </p>
-        </fieldset>
-       <a href="_principal/menu-principal.html"> Logar </a>
-            <br/>
-        </form>
-</body>
+    <body>       
+        <div>
+            <form method="post" id="mlogin">
+                <!--  Validar o login no db" -->
+                <fieldset>
+                    <legend class="negrito"> Bem-vindo a área de login </legend>
+                    <p class='negrito'>
+                        <label for="lblLogin"> Login: </label>
+                        <input 
+                            type="text" 
+                            name="loginUsuario" 
+                            id="lblLogin" 
+                            size="13"
+                            maxlength="15"
+                            placeholder="<Digite seu login>"/>
+                    </p>
+                    <p class='negrito'>
+                        <label for="lblSenha"> Senha: </label> 
+                        <input 
+                            type="password" 
+                            name="senhaUsuario" 
+                            id="lblSenha" 
+                            size="13"
+                            maxlength="15" 
+                            placeholder="<Digite sua senha>"/>
+                    </p>
+                </fieldset>
+                <a class='botao' href="_principal/menu-principal.html">
+                    Logar
+                </a>
+            </form>
+        </div>
+    </body>
 </html>

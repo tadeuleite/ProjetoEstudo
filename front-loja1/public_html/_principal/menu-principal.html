@@ -2,39 +2,64 @@
 
 <html>
     <head>
-        <title>Menu principal</title>
+        <title> Menu principal </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            h1{                
-                font-size: 12;
+
+        <style type="text/css">
+            .negrito { font-weight:bold; } 
+            .botao{
+                background-color: #e7e7e7;
+                border: 2px solid #555555;
+                border-radius: 6px;
+                color: black;
+                padding: 12px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+            }
+            div {
+                border: 1px solid black;               
+                margin-bottom: 150px;
+                margin-right: 800px;
             }
         </style>
     </head>
+
     <body>
         <div>
             <fieldset>
-                <legend><b>Bem-vindo ao menu principal</b></legend>
-                <br/>
+                <legend class="negrito">Bem-vindo ao menu principal</legend>
+
                 <h1>
                     <b> Selecione uma das opções abaixo: </b>
                 </h1>               
-                <p>
-                    <a href="_cliente/menu-cliente.html"> Clique aqui para ir ao menu de <b> clientes </b> </a> 
-                </p>
-                <p>
-                    <a href="_vendedor/menu-vendedor.html"> Clique aqui para ir ao menu de <b> vendedores </b> </a> 
-                </p>
-                <p> 
-                    <a href="_produto/menu-produto.html"> Clique aqui para ir ao menu de <b> produtos </b> </a> 
-                </p>
-                <p> 
-                    <a href="_entrega/menu-entrega.html"> Clique aqui para calcular o preço do <b> frete </b> </a> 
-                </p>                
+                <a class="botao" href="_cliente/menu-cliente.html">
+                    Clique aqui para ir ao menu de<strong> clientes </strong>
+                </a> 
+
+                <a class="botao" href = "_vendedor/menu-vendedor.html">
+                    Clique aqui para ir ao menu de<strong> vendedores </strong>
+                </a> 
+
+                <a class="botao" href = "_produto/menu-produto.html">
+                    Clique aqui para ir ao menu de<strong> produtos </strong>
+                </a> 
+
+                <a class="botao" href = "_entrega/menu-entrega.html">
+                    Clique aqui para calcular o<strong> preço do frete </strong>
+                </a> 
+
             </fieldset>
-            <button> <a href="../index.html"> Trocar usuário ou deslogar </a> </button>
-                <br/>
-                <b> *Os menus são baseados em CIDA (Consultar, Inserir, Deletar e Alterar) </b>
+
+            <a class="botao" href = "../index.html">
+                Trocar usuário ou deslogar
+            </a>
+            <p class="negrito">
+                *Os menus são baseados em CIDA (Consultar, Inserir, Deletar e Alterar)
+
         </div>
     </body>
 </html>

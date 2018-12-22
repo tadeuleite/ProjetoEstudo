@@ -2,17 +2,38 @@
 
 <html>
     <head>
-        <title>Inserir Vendedor</title>
+        <title> Inserir Vendedor </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            .negrito { font-weight:bold; } 
+            .botao{
+                background-color: #e7e7e7;
+                border: 2px solid #555555;
+                border-radius: 6px;
+                color: black;
+                padding: 12px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+            }
+            div {
+                border: 1px solid black;               
+                margin-bottom: 150px;
+                margin-right: 800px;
+            }
+        </style>
     </head>
     <body>
         <div>
             <fieldset>
-                <legend><b>Inserir vendedor</b></legend>
-                <br/>
-                <p>
-                    <label for="lblNome"> <b> Nome do vendedor </b></label>
+                <legend class="negrito"> Inserir vendedor </legend>
+
+                <p class="negrito">
+                    <label for="lblNome"> Nome do vendedor </label>
                     <input
                         type="text"
                         name="nomeVendedor"
@@ -21,8 +42,8 @@
                         maxlength="50"
                         placeholder="<Digite o nome completo do vendedor aqui>"/>
                 </p>
-                <p>
-                    <label for="lblCpf"> <b> Cpf do vendedor </b></label>
+                <p class="negrito">
+                    <label for="lblCpf"> Cpf do vendedor </label>
                     <input 
                         type="text" 
                         name="cpfVendedor"
@@ -31,8 +52,8 @@
                         maxlength="11"
                         placeholder="<Digite apenas os números do cpf>"/>
                 </p>
-                <p>
-                    <label for="lblFone"> <b> Telefone do vendedor </b></label> 
+                <p class="negrito">
+                    <label for="lblFone"> Telefone do vendedor </label> 
                     <input 
                         type="text"
                         name="foneVendedor"
@@ -42,10 +63,13 @@
                         placeholder="<Digite apenas os números do telefone com DDD>"/>
                 </p>
                 <!-- ao clicar em enviar, tem que ir pro db -->
-               <a href="">Enviar dados</a>
-               <br/>
+                <a class="botao" href = "#">
+                    Enviar dados
+                </a>
             </fieldset>
-            <a href="../menu-principal.html">Voltar ao menu principal</a>
+            <a class="botao" href = "../menu-principal.html">
+                Voltar ao menu principal
+            </a>
         </div>
     </body>
 </html>

@@ -2,17 +2,39 @@
 
 <html>
     <head>
-        <title>Consultar Clientes</title>
+        <title> Consultar Clientes </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            .negrito { font-weight:bold; }
+            .botao{
+                background-color: #e7e7e7;
+                border: 2px solid #555555;
+                border-radius: 6px;
+                color: black;
+                padding: 12px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+            }
+            div {
+                border: 1px solid black;               
+                margin-bottom: 150px;
+                margin-right: 800px;
+            }
+        </style>
     </head>
+
     <body>
         <div>
             <fieldset>
-                <legend><b>Consultar clientes</b></legend>
-                <br/>             
-                <p>
-                    <label for="lblCpf"> <b> Cpf do cliente: </b></label>
+                <legend class="negrito"> Consultar clientes </legend>
+
+                <p class="negrito">
+                    <label for="lblCpf"> Cpf do cliente: </label>
                     <input 
                         type="text"
                         name="cpfCliente"
@@ -32,12 +54,15 @@
                         maxlength="50" 
                         placeholder="<Digite um nome do cliente aqui>"/>
                 </p>
-                
+
                 <!-- ao clicar em enviar, tem que ir pro db e retornar os itens comprados-->
-               <a href="" target="_blank">Enviar dados</a> 
-                <br/>
+                <a class="botao" href = "#">
+                    Enviar dados
+                </a>
             </fieldset>
-            <a href="../menu-principal.html">Voltar ao menu principal</a> 
+            <a class="botao" href = "../menu-principal.html">
+                Voltar ao menu principal
+            </a>
         </div>
     </body>
 </html>
