@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>Calcular Preço do Frete</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title> Calcular Preço do Frete </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style type="text/css">
-        .negrito { font-weight:bold; }
-        .botao{
-            background-color: #e7e7e7;
-            border: 2px solid #555555;
-            border-radius: 6px;
-            color: black;
-            padding: 12px 28px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 15px;
-            margin: 4px 2px;
-        }
-        div {
-            border: 1px solid black;
-            margin-bottom: 150px;
-            margin-right: 800px;
-        }
-    </style>
-</head>
+        <style type="text/css">
+            .negrito { font-weight:bold; }
+            .botao{
+                background-color: #e7e7e7;
+                border: 2px solid #555555;
+                border-radius: 6px;
+                color: black;
+                padding: 12px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+            }
+            div {
+                border: 1px solid black;
+                margin-bottom: 150px;
+                margin-right: 800px;
+            }
+        </style>
+    </head>
 
-<body>
-<div>
-    <fieldset>
-        <legend class="negrito"> Calcular preço do frete </legend>
+    <body>
+        <div>
+            <fieldset>
+                <legend class="negrito"> Calcular preço do frete </legend>
 
-        <p class="negrito">
-            <label for="lblDistancia"> Digite a distância até o destino (em metros) </label>
-            <input
-                    type="text"
-                    name="distanciaEntrega"
-                    id="lblDistancia"
-                    size="27"
-                    maxlength="11"
-                    placeholder="<Digite a distância aqui>"/>
-        </p>
+                <p class="negrito">
+                    <label for="lblDistancia"> Digite a distância até o destino (em metros) </label>
+                    <input
+                            type="text"
+                            name="distanciaEntrega"
+                            id="lblDistancia"
+                            size="27"
+                            maxlength="11"
+                            placeholder="<Digite a distância aqui>"/>
+                </p>
 
-        <p class="negrito">
-            <label for="lblPreco"> Digite o preço total da entrega </label>
-            <input
-                    type="text"
-                    name="precoEntrega"
-                    id="lblPreco"
-                    size="50"
-                    maxlength="50"
-                    placeholder="<Digite o preço sem o R$>"/>
-        </p>
+                <p class="negrito">
+                    <label for="lblPreco"> Digite o preço total da entrega </label>
+                    <input
+                            type="text"
+                            name="precoEntrega"
+                            id="lblPreco"
+                            size="50"
+                            maxlength="50"
+                            placeholder="<Digite o preço sem o R$>"/>
+                </p>
 
-        <a class="botao" href = "#">
-            Enviar dados
-        </a>
-    </fieldset>
-    <a class="botao" href = "../menu-principal.html">
-        Voltar ao menu principal
-    </a>
-    <p class="negrito">
-        *O preço do frete será a distância dividido por 100 mais o preço total
-</div>
-</body>
+                <a class="botao" href = "#">
+                    Enviar dados
+                </a>
+            </fieldset>
+            <a class="botao" href = "../menu-principal.html">
+                Voltar ao menu principal
+            </a>
+            <p class="negrito">
+                *O preço do frete será a distância dividido por 100 mais o preço total
+        </div>
+    </body>
 </html>
